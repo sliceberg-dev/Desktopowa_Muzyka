@@ -15,7 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Assets\Data.txt" />
+    <None Include="Assets\Data.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <Resource Include="Assets\obraz.png" />
     <Resource Include="Assets\obraz2.png" />
     <Resource Include="Assets\obraz3.png" />

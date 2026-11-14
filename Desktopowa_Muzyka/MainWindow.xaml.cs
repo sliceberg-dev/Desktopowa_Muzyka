@@ -24,10 +24,11 @@ namespace Desktopowa_Muzyka
         public MainWindow()
         {
             InitializeComponent();
-           
-           // using StreamReader reader = new("/Assets/Data.txt");
 
-            string[] linie = File.ReadAllLines("C:\\Users\\5Tp\\source\\repos\\Desktopowa_Muzyka\\Desktopowa_Muzyka\\Assets\\Data.txt");
+            // using StreamReader reader = new("/Assets/Data.txt");
+            string path = System.IO.Path.Combine("Assets", "Data.txt");
+            
+            string[] linie = File.ReadAllLines(path);
 
      //   C: \Users\5Tp\source\repos\Desktopowa_Muzyka
             int i = 0;
